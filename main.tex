@@ -1,0 +1,88 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\title{My Use Cases Project}
+\author{Dream Builders Group: Nathan Trowers , Mohammad Reza Raeisy, Sahil Vashisht, Nishant Singh }
+\date{June 27 2019}
+
+\begin{document}
+
+\maketitle
+
+USE CASE NAME
+
+\section{Create project charter} 
+
+    \subsection{Goal}To provide the User (who is a Project Manager) with (UI / Screen) to Describe the Project Carter. The Project Charter should stored in the system in a Data Format which easily allows it to be parsed / converted in the Statement of Work and / or WBS.
+    
+
+    \subsection{Actors}The Project Manager(user) 
+
+    \subsection{Scenario}The system presents a blank statement of work template for the user to enter information under the headings “Functional Requirements” and “Nonfunctional Requirements”.  
+The project charter will be shown on a display screen which will be in simple table format .
+
+    Prerequisite: None
+
+
+
+\section{Create Planning Documents}
+
+    \subsection{Goal}To display the necessary documents that provide the user with a clear picture of how everything is planned.(Cost planning document,Quality planning documents)
+    
+    \subsection{Actors}The actors in Planning Documents are executive officers/clients which in this case is user.
+    
+    \subsection{Scenario}
+    \paragraph{1) }The system will present the user with planning document templates to choose from(time planning, cost planning, risk management document, HR skilling requirements) .
+
+    \paragraph{2)} The information saved to the machine’s local disk is viewable as received by the user.
+    Prerequisite: The Project Charter data must be available for referencing
+
+
+
+
+\section{Create WBS}
+
+     \subsection{Goal} The goal of this Use Case is to provide The PM who is using our system with a screen to decompose the SOW into a series of small discrete steps. It would be optimal if the System could maintain a LINK of each WBS Step back to the text into SOW.
+
+   \subsection{Actors}  The WBS will be handled by the Human Resource Managers by which every individual can do one task at a time to reduce the time used. 
+
+
+     \subsection{Scenario} 
+The System will provide the USER (which the PM using our system) with a SCREEN to enter details 
+The WBS will give every employee the tasks which needs to be done by them based on their work schedule that will be shown on a calender screen
+
+
+    \paragraph{} Prerequisite: The Project Charter(SOW part), and the employee information will be used to assign the work.
+
+
+
+\newpage
+\title{UML Diagrams}
+\hline
+\subsection{Class Name}
+    \item createProjectCharter
+\subsection{Attributes}
+    \item projectCharter:String[]
+\subsection{Methods}
+    \item createProjChar()
+        \item insertS()\\
+
+\subsection{Class Name}
+    \item createPlanningDocuments
+\subsection{ Attributes}
+    \item costPlanningTemplate: String []
+    \item qualityPlanningTemplate: String[]
+\subsection{Methods}
+    \item templateCreate()
+    \item templateUse()\\
+
+\subsection{Class Name}
+    \item createWBS
+\subsection{Attributes}
+    \item mainTask[]
+    \item (inside level)subsection[]
+\subsection{Methods}
+    \item breakDownTaks()
+    \item insertTask()
+
+\end{document}
